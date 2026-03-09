@@ -1,23 +1,46 @@
-import { animate } from 'animejs';
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    const statusMessage = document.getElementById('form-status');
 
-const animation = animate(targets, parameters);
+    if (form) {
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault(); 
 
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'A enviar...';
+            btn.disabled = true;
 
-import { animate, stagger, splitText } from 'animejs';
+            const data = new FormData(event.target);
 
-const { chars } = splitText('h2', { words: false, chars: true });
+            try {
+                const response = await fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
 
-animate(chars, {
-  y: [
-    { to: '-2.75rem', ease: 'outExpo', duration: 600 },
-    { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
-  ],
-  rotate: {
-    from: '-1turn',
-    delay: 0
-  },
-  delay: stagger(50),
-  ease: 'inOutCirc',
-  loopDelay: 1000,
-  loop: true
+                if (response.ok) {
+                    statusMessage.innerHTML = "Mensagem enviada com sucesso! Entrarei em contacto em breve.";
+                    statusMessage.style.color = "greenyellow";
+                    form.reset();
+                } else {
+                    statusMessage.innerHTML = "Oops! Ocorreu um problema ao enviar a mensagem. Verifique os dados.";
+                    statusMessage.style.color = "#ff4c4c";
+                }
+            } catch (error) {
+                statusMessage.innerHTML = "Oops! Erro de conexão. Tente novamente mais tarde.";
+                statusMessage.style.color = "#ff4c4c";
+            } finally {
+                btn.innerText = originalText;
+                btn.disabled = false;
+                
+                setTimeout(() => {
+                    statusMessage.innerHTML = "";
+                }, 5000);
+            }
+        });
+    }
 });
