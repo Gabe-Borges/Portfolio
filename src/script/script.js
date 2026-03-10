@@ -52,8 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (greetingElement) {
         const hour = new Date().getHours();
         let greeting; 
-        if (hour < 18 && hour >= 6) {
+        if (hour < 12 && hour >= 6) {
             greeting = "Bom dia!";
+        } else if (hour < 19 && hour >= 12) {
+            greeting = "Boa tarde!";
         } else {
             greeting = "Boa noite!";
         }

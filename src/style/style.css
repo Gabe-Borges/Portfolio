@@ -22,9 +22,9 @@ html {
 }
 
 ::-webkit-scrollbar { width: 20px; }
-::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 10px; }
-::-webkit-scrollbar-thumb { background: rgba(107, 107, 107, 0.836); border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #696969; }
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px rgba(255, 255, 255, 0); border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #69696900; }
 
 a {
   text-decoration: none;
@@ -111,7 +111,7 @@ body {
   color: white;
   font-family: var(--font-main);
   scroll-behavior: smooth;
-  font-size: 2.8vh;
+  font-size: 1.8vh;
   height: 100vh;
   padding-left: 10vh;
   padding-right: 10vh;
@@ -121,7 +121,7 @@ body {
 }
 
 body h1 {
-  font-size: 5.5vh;
+  font-size: 5vh;
   text-align: center;
   color: var(--accent-color);
 }
@@ -131,11 +131,16 @@ body h2 {
   text-align: center;
 }
 
-/* Agrupamento: Juntei as duas marcações 'section' que você tinha no arquivo original */
 section {
-  margin-top: -10vh;
   text-align: center;
+  margin-bottom: 10vh;
   padding: 5vh 5vh 10vh 5vh;
+  background: rgba(230, 230, 230, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(230, 230, 230, 0.3);
 }
 
 .dark.mode { background-color: var(--bg-dark); color: white; }
@@ -305,9 +310,9 @@ ul { list-style: none; }
   border: 1px solid #333;
   color: #eee;
   border-radius: 10px;
-  padding: 20px;
+  padding: 2px;
   box-shadow: 0 6px 15px #0000004d;
-  max-width: 350px;
+  max-width: 500px;
   width: 100%;
   height: auto;
   display: flex;
@@ -431,3 +436,5 @@ ul { list-style: none; }
 .submit-btn:active {
   transform: translateY(0);
 }
+
+

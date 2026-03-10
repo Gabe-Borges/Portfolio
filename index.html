@@ -21,7 +21,7 @@
       <ul>
         <img src="/src/documents/images/Logo.png" alt="Logo" class="logo" style="width: 95px;">
         <a href="#sobremim">Sobre Mim</a>
-        <a href="#curriculo">Currículo</a>
+        <a href="#sobremim">Currículo</a>
         <a href="#projetos">Projetos</a>
         <a href="https://github.com/Gabe-Borges">Github</a>
         <a
@@ -35,14 +35,13 @@
 
 <body>
 
+  <div class="frontpage" style="margin-bottom: 8vh;" >
 
-  <div class="frontpage">
     <div class="info">
       <h1 class="text-xl" style="text-align: left;" id="greeting"></h1>
-      <br>
-      <h1 style="margin-top: -40px;">bem vindo ao meu portifólio</h1>
+      <h1 style="margin-top: -20px;">bem vindo ao meu portifólio</h1>
 
-      <button class="animated-button" href="#sobremim">
+      <button class="animated-button">
         <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -59,7 +58,6 @@
     </div>
 
     <div class="photo">
-
       <div class="card-frontpage">
         <div class="user-picture">
           <img src="/src/documents/images/199385027.jpeg" alt="Foto de perfil" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
@@ -90,100 +88,113 @@
         </div>
       </div>
     </div>
+
   </div>
-  <section class="aboutme" id="sobremim">
-    <h1>Sobre mim</h1>
-    <div class="about">
-      <p>Sou um desenvolvedor focado em criar experiências digitais impactantes e estou focado em alcançar meus
-        objetivos como empreendedor na área de tecnologia. Com experiência em HTML, CSS, Python e JavaScript, estou
-        sempre em busca de aprender novas ferramentas e tendências para aprimorar minhas habilidades. Tenho um espírito
-        inovador e uma visão empreendedora, buscando transformar ideias em soluções que façam a diferença. Se você
-        procura um profissional dedicado e motivado para colaborar em projetos desafiadores.
-        <a href="mailto:g.borgestoledo@gmail.com" style="text-decoration: solid; color:greenyellow;"> Entre em contato
-          através do meu Email.</a>
-      </p>
-      <p> Esse portifólio tem o objetivo de mostrar o meu progresso e a evolução das minhas habilidades de programação e
-        demonstrar algumas das minhas habilidades de Front-End </p>
-    </div>
-  </section>
 
+  <div class="grid-auto cols-curriculo" id="sobremim" style="padding-top: 5vh;">
 
-  <section id="curriculo">
-    <div class="container-fluid">
-
-      <h1>Currículo</h1>
-      <div class="row">
-
-        <h2>Formação:</h2>
-
-        <h3>Cursando</h3>
-        <p>Faculdade de Tecnologia do Estado de São Paulo (FATEC) | Análise e Desenvolvimento de Sistemas | 3° Semestre
+    <section class="aboutme">
+      <h1>Sobre mim</h1>
+      <div class="about">
+        <p>Sou um desenvolvedor focado em criar experiências digitais impactantes e estou focado em alcançar meus
+          objetivos como empreendedor na área de tecnologia. Com experiência em HTML, CSS, Python e JavaScript, estou
+          sempre em busca de aprender novas ferramentas e tendências para aprimorar minhas habilidades. Tenho um espírito
+          inovador e uma visão empreendedora, buscando transformar ideias em soluções que façam a diferença. Se você
+          procura um profissional dedicado e motivado para colaborar em projetos desafiadores.
+          <a href="mailto:g.borgestoledo@gmail.com" style="text-decoration: solid; color:greenyellow;"> Entre em contato
+            através do meu Email.</a>
         </p>
-        <h4>
-          Sinta-se à vontade para baixar o
-          <a href="./documents/Currículo.pdf" target="_blank" style="text-decoration: solid; color:greenyellow;">
-            meu currículo
-          </a>
-        </h4>
+        <p> Esse portifólio tem o objetivo de mostrar o meu progresso e a evolução das minhas habilidades de programação e
+          demonstrar algumas das minhas habilidades de Front-End </p>
+      </div>
+    </section>
+  
+    <section id="curriculo">
+      <div class="container-fluid">
 
-        <div class="grid-auto cols-curriculo" style="padding-top: 50px;">
-          <div class="col card-client">
-            <h2>Hard Skills</h2>
-            <div class="skills" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-python-plain-wordmark colored"></i>
-              <i class="devicon-bootstrap-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-vscode-plain-wordmark colored"></i>
-              <i class="devicon-github-original-wordmark"></i>
-              <i class="devicon-git-plain-wordmark colored"></i>
+        <h1>Currículo</h1>
+
+        <div class="row">
+          <h3>Cursando</h3>
+          <p>Faculdade de Tecnologia do Estado de São Paulo (FATEC) | Análise e Desenvolvimento de Sistemas | 3° Semestre
+          </p>
+          <h4>
+            Sinta-se à vontade para baixar o
+            <a href="./documents/Currículo.pdf" target="_blank" style="text-decoration: solid; color:greenyellow;">
+              meu currículo
+            </a>
+          </h4>
+
+          <div class="grid-auto cols-curriculo">
+            <div class="col card-client"style="padding: 3vh">
+              <h2>Hard Skills</h2>
+              <br>
+              <div class="skills" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-python-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-vscode-plain-wordmark colored"></i>
+                <i class="devicon-github-original-wordmark"></i>
+                <i class="devicon-git-plain-wordmark colored"></i>
+                <i class="devicon-flask-original-wordmark"></i>
+                <i class="devicon-java-plain-wordmark colored"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-notion-plain colored"></i>
+          
+              </div>
             </div>
-          </div>
 
+          </div>
+        </div>
+    </section>
+
+  </div>
+
+  <div class="grid-auto cols-projects" id="projetos" style="padding-top: 5vh;">
+    <section class="projects">
+
+      <h1>Projetos</h1>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h2>Projeto Sama</h2>
+          <p>O projeto Sama foi desenvolvido por mim e pela minha equipe de projetos integrados ".Tec".
+            O projeto consiste em um sistema de gerenciamento de atestados e equipes, onde o usuário pode enviar
+            atestados, editar editar e gerenciar equipes.
+            O sistema foi desenvolvido utilizando HTML, CSS, JavaScript e Python com o framework Flask.
+            <a href="https://github.com/Equipe-DotTec/SAMA-API" target="_blank"
+              style="text-decoration: solid; color:greenyellow;">
+              Veja o repositório no GitHub.
+            </a>
+          </p>
+          <h3 style="margin-top: 20px;">Minhas Contribuições</h3>
+          <p>Desenvolvi o front-end com HTML, CSS e JavaScript, criando uma interface amigável e intuitiva.</p>
+          <h3 style="margin-top: 20px;">Desafios Enfrentados</h3>
+          <p>Foi meu primeiro contato prático com HTML e CSS. Enfrentei dificuldades com semântica e estilização, que
+            superei com pesquisa e prática.</p>
+        </div>
+
+        <div class="project-card">
+          <h2>Projeto PDI</h2>
+          <p>Este portifólio foi o segundo projeto integrado da faculdade desenvolvido junto à minha equipe,
+            onde o objetivo era criar um aplicativo de desktop utilizando Java, JavaFX e MySql.
+            O programa foi desenvolvido para otimizar o processo de criação e gestão de planos de desenvolvimento
+            individual (PDIs).
+            Ele oferece uma solução centralizada para líderes que buscam estruturar, monitorar e alcançar metas de
+            crescimento de forma eficiente,
+            promovendo uma cultura de melhoria contínua e desenvolvimento de competências.
+          </p><a href="https://github.com/Dottecteam/PDI" target="_blank"
+            style="text-decoration: solid; color:greenyellow;">
+            Visite o repositório no Github.
+          </a>
+          <h3 style="margin-top: 20px;">Desafios Enfrentados</h3>
+          <p>Aprender a utilizar as tecnologias e a trabalhar em equipe.</p>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section class="projects" id="projetos">
-    <h1>Projetos</h1>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h2>Projeto Sama</h2>
-        <p>O projeto Sama foi desenvolvido por mim e pela minha equipe de projetos integrados ".Tec".
-          O projeto consiste em um sistema de gerenciamento de atestados e equipes, onde o usuário pode enviar
-          atestados, editar editar e gerenciar equipes.
-          O sistema foi desenvolvido utilizando HTML, CSS, JavaScript e Python com o framework Flask.
-          <a href="https://github.com/Equipe-DotTec/SAMA-API" target="_blank"
-            style="text-decoration: solid; color:greenyellow;">
-            Veja o repositório no GitHub.
-          </a>
-        </p>
-        <h3 style="margin-top: 20px;">Minhas Contribuições</h3>
-        <p>Desenvolvi o front-end com HTML, CSS e JavaScript, criando uma interface amigável e intuitiva.</p>
-        <h3 style="margin-top: 20px;">Desafios Enfrentados</h3>
-        <p>Foi meu primeiro contato prático com HTML e CSS. Enfrentei dificuldades com semântica e estilização, que
-          superei com pesquisa e prática.</p>
-      </div>
-
-      <div class="project-card">
-        <h2>Projeto PDI</h2>
-        <p>Este portifólio foi o segundo projeto integrado da faculdade desenvolvido junto à minha equipe,
-          onde o objetivo era criar um aplicativo de desktop utilizando Java, JavaFX e MySql.
-          O programa foi desenvolvido para otimizar o processo de criação e gestão de planos de desenvolvimento
-          individual (PDIs).
-          Ele oferece uma solução centralizada para líderes que buscam estruturar, monitorar e alcançar metas de
-          crescimento de forma eficiente,
-          promovendo uma cultura de melhoria contínua e desenvolvimento de competências.
-        </p><a href="https://github.com/Dottecteam/PDI" target="_blank"
-          style="text-decoration: solid; color:greenyellow;">
-          Visite o repositório no Github.
-        </a>
-        <h3 style="margin-top: 20px;">Desafios Enfrentados</h3>
-        <p>Aprender a utilizar as tecnologias e a trabalhar em equipe.</p>
-      </div>
-    </div>
-  </section>
+  </div>
 
 </body>
 
